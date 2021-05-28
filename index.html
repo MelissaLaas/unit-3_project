@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <title>The Code Review</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <header>The Code Review</header>
+
+        <form action="index.html" method="post">
+
+                <h2>Signup for our newsletter</h2>
+                <p id="signup_p">Get the latest news on how your code is doing right in your inbox.</p>
+
+<hr>
+<!-- Contact information -->
+            <fieldset id="info">
+                <legend class="heading">Contact Information</legend>
+                    <label for="name">Full Name:</label>
+                        <input required type="text" id="name" name="user-name" placeholder="Required"><br>
+                    <label for="email">Email Address:</label>
+                        <input required type="email" id="email" name="user-email" placeholder="Required"><br>
+         
+ <!-- Address info -->                      
+                    <label for="address1">Street Address:</label>
+                        <input type="text" id="address1" name="user_address1"><br>
+                    <label for="address2">City:</label>
+                        <input type="text" id="address2" name="user_address2"><br>
+
+                    <label for="state">State:</label>
+                        <select id="state" name="user_state">
+                            <optgroup label="State">
+                                <option value="1">Select State</option>
+                                    <option value="1">Eastern Cape</option>
+                                    <option value="2">Gauteng</option>
+                                    <option value="3">Kwazulu Natal</option>
+                                    <option value="4">Western Cape</option>
+                                    <option value="5">Free State</option>
+                              </optgroup>
+                        </select>
+
+                    <label for="zip">Zip Code:</label>
+                        <input type="text" id="zip" name="user_zip">
+                
+            </fieldset>
+            
+<hr>
+<!-- Newsletter info -->
+            <fieldset id="newsletter">
+                <legend class="heading">Newsletter:</legend>
+                
+                <p class="sub-head">Select the newsletter(s) you would like to receive:</p>
+                    <input type="checkbox" id="news_html" value="news_interest" name="user_news_interest">
+                        <label for="news_html">HTML News</label><br>
+                    <input type="checkbox" id="news_css" value="news_interest" name="user_news_interest">
+                        <label for="news_css">CSS News</label><br>
+                    <input type="checkbox" id="news_java" value="news_interest" name="user_news_interest">
+                        <label for="news_java">Javascript News</label><br>
+
+                <p class="sub-head">Select the newsletter(s) you would like to receive:</p>
+                    <input type="radio" id="format_html" value="format_news" name="user_news_format">
+                        <label for="format_html">HTML</label><br>
+                    <input type="radio" id="format_plain" value="format_news" name="user_news_format">
+                        <label for="format_plain">Plain text</label><br>
+
+                <p class="sub-head">Other topics you'd like to hear about:</p>
+                    <textarea id="topics" name="user_topics"></textarea>
+
+<!-- Submit button -->
+            </fieldset>
+            <button type="submit">Sign Up</button>
+        </form>
+
+            <footer>&#169; The Code Review</footer>
+</html>
