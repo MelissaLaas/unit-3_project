@@ -38,7 +38,7 @@ header {
     display:block;
     text-align: center;
     padding: 10px;
-    margin: 8px auto;
+    margin: 15px auto;
 }
 
 .heading {
@@ -161,6 +161,7 @@ footer {
     color: grey;
     font-size: x-small;
     font-style: italic;
+    margin-bottom: 40vh;
 }
 
 /*--- Media Queries ---*/
