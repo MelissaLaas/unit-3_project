@@ -101,6 +101,7 @@ input:focus,
 textarea:focus,
 select:focus {
     box-shadow: 0 0 10px #719ECE;
+    transition: 0.2s;
 }
 
 textarea {
@@ -121,6 +122,7 @@ input:focus,
 textarea:focus,
 select:focus {
     border: 2px solid #00aafc;
+    transition: 0.15s;
 }
 
 input::placeholder {
@@ -130,9 +132,15 @@ input::placeholder {
     padding:5px;
 }
 
+textarea::placeholder {
+    font-size: 12px;
+    font-style: italic;
+    padding:5px;
+}
+
 input#zip {
     display: block;
-    width: 25vh;
+    width: 50%;
 }
 
 /*--- Button and Footer ---*/
@@ -171,5 +179,9 @@ footer {
     form {
         margin: 0 auto;
         max-width: 768px;
+    }
+    input#zip {
+        display: block;
+        width: 25%;
     }
 }
