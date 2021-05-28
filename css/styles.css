@@ -1,0 +1,174 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Merriweather', serif;
+    line-height: 1.5em;
+    color:#174457;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+/*--- Header ---*/
+
+#info:hover,
+#newsletter:hover {
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    background-image: linear-gradient(to right, #84fab052 0%, #8fd3f470 51%, #84fab0 50%);
+}
+
+header {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:#174457;
+    color: white;
+    padding: 20px 0 20px 0;
+    width:100%;
+}
+
+.main-heading {
+    display:block;
+    text-align: center;
+    padding: 10px;
+    margin: 8px auto;
+}
+
+.heading {
+    padding-top:1.75em;
+}
+
+h2,
+.heading {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+hr {
+    border: 2px solid #174457;
+}
+
+#signup_p {
+    color:darkgrey;
+    font-weight: lighter;
+    line-height: 1.35;
+}
+
+/*--- Contact/Newsletter Info ---*/
+
+fieldset {
+    border: none;
+  }
+  
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    color: #174457be;
+    margin-bottom: 8px;
+    font-weight: lighter;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  font-weight: lighter;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #f6f6f6;
+  color: #8a97a0;
+  margin-bottom: 30px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea {
+    height: 10em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+#state:hover,
+input:hover,
+textarea:hover,
+select:hover,
+#state:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #00aafc;
+}
+
+input::placeholder {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    padding:5px;
+}
+
+input#zip {
+    display: block;
+    width: 25vh;
+}
+
+/*--- Button and Footer ---*/
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 20px #eee;
+  background-image: linear-gradient(to right, #43f083 0%, #00aafc 51%, #43f083 100%);
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border-style: hidden;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+button:hover {
+    background-position: right center; 
+  }
+
+footer {
+    text-align: center;
+    color: grey;
+    font-size: x-small;
+    font-style: italic;
+}
+
+/*--- Media Queries ---*/
+
+@media (min-width: 768px) {
+    
+    form {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+}
