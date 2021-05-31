@@ -21,7 +21,7 @@ html {
     transition: 0.5s;
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
-    background-image: linear-gradient(to right, #E5E5E5 0%, rgb(233, 233, 233) 50%, #ffff 51%);
+    background-image: linear-gradient(to right, #f8f9fa 0%, #f8f9fa 50%, #ffff 51%);
 }
 
 header {
