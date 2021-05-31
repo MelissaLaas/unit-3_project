@@ -21,7 +21,7 @@ html {
     transition: 0.5s;
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
-    background-image: linear-gradient(to right, #84fab052 0%, #8fd3f470 51%, #84fab0 50%);
+    background-image: linear-gradient(to right, #E5E5E5 0%, rgb(233, 233, 233) 50%, #ffff 51%);
 }
 
 header {
@@ -77,6 +77,13 @@ label {
     color: #174457be;
     margin-bottom: 8px;
     font-weight: lighter;
+    align-content: left;
+}
+
+label.sub-head {
+    margin: 16px auto;
+    font-weight: 500;
+    color: #174457;
 }
 
 input[type="text"],
@@ -93,7 +100,7 @@ select {
   outline: 0;
   padding: 15px;
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   color: #8a97a0;
   margin-bottom: 30px;
 }
@@ -101,6 +108,7 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
+    background-color: white;
     box-shadow: 0 0 10px #719ECE;
     transition: 0.2s;
 }
@@ -152,7 +160,7 @@ button {
   transition: 0.5s;
   background-size: 200% auto;
   box-shadow: 0 0 20px #eee;
-  background-image: linear-gradient(to right, #43f083 0%, #00aafc 51%, #43f083 100%);
+  background-image: linear-gradient(to right, #42e2b8 0%, #2d82b7 51%, #42e2b8 100%);
   font-size: 20px;
   text-align: center;
   border-radius: 5px;
@@ -181,6 +189,22 @@ footer {
         margin: 0 auto;
         max-width: 768px;
     }
+
+    label.info {
+        float: left;
+        width:25%;
+        text-align: left;
+        margin-right:5px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        float:left;
+        width: 74%;
+    }
+
     input#zip {
         display: block;
         width: 25%;

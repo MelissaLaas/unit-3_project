@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <header>The Code Review</header>
-
+    
+    <div class="container">
         <form action="index.html" method="post">
 
             <section class="main-heading">
@@ -21,20 +22,20 @@
 <!-- Contact information -->
             <fieldset id="info">
                 <legend class="heading">Contact Information</legend>
-                    <label for="name">Full Name:</label>
+                    <label class="info" for="name">Full Name:</label>
                         <input required type="text" id="name" name="user-name" placeholder="Required"><br>
-                    <label for="email">Email Address:</label>
+                    <label class="info" for="email">Email Address:</label>
                         <input required type="email" id="email" name="user-email" placeholder="Required"><br>
-                    <label for="telephone">Telephone number:</label>
-                        <input type="tel" id="telephone" name="user-telephone"><br>
+                    <label class="info" for="telephone">Telephone number:</label>
+                        <input required type="tel" id="telephone" name="user-telephone" placeholder="Required"><br>
          
  <!-- Address info -->                      
-                    <label for="address1">Street Address:</label>
+                    <label class="info" for="address1">Street Address:</label>
                         <input required type="text" id="address1" name="user_address1" placeholder="Required"><br>
-                    <label for="address2">City:</label>
+                    <label class="info" for="address2">City:</label>
                         <input required type="text" id="address2" name="user_address2" placeholder="Required"><br>
 
-                    <label for="state">State:</label>
+                    <label class="info" for="state">State:</label>
                         <select id="state" name="user_state">
                             <optgroup label="State">
                                 <option value="1">Select State</option>
@@ -46,7 +47,7 @@
                               </optgroup>
                         </select>
 
-                    <label for="zip">Zip Code:</label>
+                    <label class="info" for="zip">Zip Code:</label>
                         <input required type="text" id="zip" name="user_zip" placeholder="Required">
                 
             </fieldset>
@@ -70,13 +71,13 @@
                     <input type="radio" id="format_plain" value="format_news" name="user_news_format">
                         <label for="format_plain">Plain text</label><br>
 
-                <p class="sub-head">Other topics you'd like to hear about:</p>
+                <label class="sub-head" for="topics">Other topics you'd like to hear about:</label>
                     <textarea id="topics" name="user_topics" placeholder="Type the other topics here"></textarea>
-
+                        
 <!-- Submit button -->
             </fieldset>
             <button type="submit">Sign Up</button>
         </form>
-
+    </div>
             <footer>&#169; The Code Review</footer>
 </html>
